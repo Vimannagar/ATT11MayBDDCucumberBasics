@@ -1,10 +1,12 @@
 package steps;
 
 import java.util.List;
+import java.util.Map;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.datatable.DataTable;
 public class RegistrationSteps {
 	
 	@Given("user should be at accounts page")
@@ -13,7 +15,7 @@ public class RegistrationSteps {
 	}
 
 	@When("user enters the following data")
-	public void user_enters_the_following_data(io.cucumber.datatable.DataTable dataTable) {
+	public void user_enters_the_following_data(DataTable dataTable) {
 	List<List<String>> data = dataTable.asLists();
 	
 	List<String> data1 = data.get(0);
@@ -21,6 +23,10 @@ public class RegistrationSteps {
 	String emailAddress = data1.get(2);
 	
 	System.out.println(emailAddress);
+	
+	String emailAddress2 = data.get(1).get(2);
+	
+	System.out.println("Email address 2 value is "+ emailAddress2);
 	
 	List<String> firstList = data.get(1);
 	
@@ -31,6 +37,17 @@ public class RegistrationSteps {
 		System.out.println(s);
 	}
 	
+	System.out.println("*******************************");
+	
+	// reading values using Map
+	
+	List<Map<String, String>> mapData = dataTable.asMaps();
+	
+	Map<String, String> mapData1 = mapData.get(1);
+	
+	 String emailValue = mapData1.get("email");
+	 
+	 System.out.println(emailValue);
 	
 	
 	}
