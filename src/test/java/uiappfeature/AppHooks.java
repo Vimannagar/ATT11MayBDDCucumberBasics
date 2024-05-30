@@ -2,11 +2,13 @@ package uiappfeature;
 
 import java.io.IOException;
 
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import drivermanager.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import utility.PropReader;
 
 public class AppHooks {
@@ -27,8 +29,25 @@ public class AppHooks {
 			
 	}
 	
-	@After
-	public void tearDown()
+	@After(order = 2)
+	public void tearDown(Scenario scenario)
+	{
+		boolean scenarioStatus = scenario.isFailed();
+		
+		if(scenarioStatus)
+		{
+			String nameOfScenario = scenario.getName();
+			
+			String scenarioName = nameOfScenario.replace(" ", "_");
+			
+			TakesScreenshot ts = (TakesScreenshot)driver;
+			
+			
+		}
+	}
+	
+	@After(order = 1)
+	public void shutDown()
 	{
 		driver.quit();
 	}

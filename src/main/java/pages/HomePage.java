@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,7 +19,14 @@ public class HomePage {
 	@FindBy(xpath = "//*[@id='nav-cart']")
 	WebElement cartIcon;
 	
-	@FindBy(xpath = "//*[@class='a-carousel-card']//a[@aria-label='Grocery']")
+	@FindAll(
+			{
+	@FindBy(xpath = "//*[@class='a-carousel-card']//a[@aria-label='Grocery']"),
+	
+	@FindBy(xpath = "(//*[@class='a-carousel-card']//img[@alt='op'])[2]")
+			}
+	
+	)
 	WebElement dealSection;
 	
 	@FindBy(xpath = "//*[@aria-label='Grocery & Gourmet Foods']")
@@ -52,6 +60,7 @@ public class HomePage {
 	{
 		wait.until(ExpectedConditions.visibilityOf(dealSection));
 		dealSection.click();
+		
 	}
 	
 	public boolean identifyGrocery()

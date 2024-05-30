@@ -1,47 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-27T21:02:10 IST" name="Default suite" finished-at="2024-05-27T21:02:14 IST" duration-ms="3452">
+  <suite started-at="2024-05-30T21:09:52 IST" name="Default suite" finished-at="2024-05-30T21:10:40 IST" duration-ms="48452">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OrderConfirmRunner@1e1a0406]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@4d154ccd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-05-27T21:02:10 IST" name="Default test" finished-at="2024-05-27T21:02:14 IST" duration-ms="3452">
-      <class name="runner.OrderConfirmRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.OrderConfirmRunner@1e1a0406]" started-at="2024-05-27T21:02:11 IST" name="setUpClass" finished-at="2024-05-27T21:02:13 IST" duration-ms="2468" status="PASS">
+    <test started-at="2024-05-30T21:09:52 IST" name="Default test" finished-at="2024-05-30T21:10:40 IST" duration-ms="48452">
+      <class name="uiappfeature.AmazonTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:uiappfeature.AmazonTestRunner@4d154ccd]" started-at="2024-05-30T21:09:52 IST" name="setUpClass" finished-at="2024-05-30T21:09:53 IST" duration-ms="1434" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@63998bf4]]>
+                <![CDATA[org.testng.TestRunner@3fba233d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OrderConfirmRunner@1e1a0406]" started-at="2024-05-27T21:02:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-27T21:02:14 IST" duration-ms="602" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@4d154ccd]" started-at="2024-05-30T21:09:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-30T21:10:04 IST" duration-ms="10344" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Order confirmation"]]>
+                <![CDATA["validation of title of page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Placing order feature"]]>
+                <![CDATA["Homepage functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.OrderConfirmRunner@1e1a0406]" started-at="2024-05-27T21:02:14 IST" name="tearDownClass" finished-at="2024-05-27T21:02:14 IST" duration-ms="90" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@4d154ccd]" started-at="2024-05-30T21:10:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-30T21:10:12 IST" duration-ms="8587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify cart icon"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Homepage functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@4d154ccd]" started-at="2024-05-30T21:10:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-30T21:10:26 IST" duration-ms="13444" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["checkout the deals section"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Homepage functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@4d154ccd]" started-at="2024-05-30T21:10:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-30T21:10:40 IST" duration-ms="14446" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify search product functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:uiappfeature.AmazonTestRunner@4d154ccd]" started-at="2024-05-30T21:10:40 IST" name="tearDownClass" finished-at="2024-05-30T21:10:40 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.OrderConfirmRunner -->
+      </class> <!-- uiappfeature.AmazonTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

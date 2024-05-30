@@ -41,6 +41,7 @@ public class HomePageSteps {
 	    homepage.enteringDealSection();
 	}
 
+	
 	@Then("daily need section should open")
 	public void daily_need_section_should_open() {
 	    homepage.identifyGrocery();
