@@ -2,6 +2,7 @@ package uiappfeature;
 
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
@@ -38,10 +39,13 @@ public class AppHooks {
 		{
 			String nameOfScenario = scenario.getName();
 			
-			String scenarioName = nameOfScenario.replace(" ", "_");
+			//String scenarioName = nameOfScenario.replace(" ", "_");
 			
 			TakesScreenshot ts = (TakesScreenshot)driver;
 			
+			byte[] source = ts.getScreenshotAs(OutputType.BYTES);
+			
+			scenario.attach(source, "image/png", nameOfScenario);
 			
 		}
 	}

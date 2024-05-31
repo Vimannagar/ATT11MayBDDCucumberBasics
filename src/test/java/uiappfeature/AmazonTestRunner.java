@@ -10,10 +10,14 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"uiappfeature"},
 		
-		plugin = {"pretty", "html:target/amazontestreport/reports.html"}
+		plugin = {"pretty", "html:target/amazontestreport/reports.html"},
 		
+		tags = "@sanity",
 		
-		)
+		publish = true, 
+		
+		dryRun = true
+	)
 
 
 
