@@ -16,7 +16,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		publish = true, 
 		
-		dryRun = true
+		dryRun = false
 	)
 
 
