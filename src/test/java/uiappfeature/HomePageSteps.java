@@ -46,5 +46,10 @@ public class HomePageSteps {
 	public void daily_need_section_should_open() {
 	    homepage.identifyGrocery();
 	}
+	
+	@Then("I should not see other page")
+	public void i_should_not_see_other_page() {
+	    
+	}
 
 }

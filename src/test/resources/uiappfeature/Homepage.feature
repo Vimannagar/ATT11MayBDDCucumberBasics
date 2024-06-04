@@ -3,6 +3,7 @@ Feature: Homepage functionality
 Scenario: validation of title of page
 Given I am at landing page
 Then page title should have "Shopping"
+But I should not see other page
 
 @functional
 Scenario: verify cart icon

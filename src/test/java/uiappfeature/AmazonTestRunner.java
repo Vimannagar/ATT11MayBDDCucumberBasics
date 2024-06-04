@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		
 		features = {"src\\test\\resources\\uiappfeature"},
-		
+				
 		glue = {"uiappfeature"},
 		
 		plugin = {"pretty", "html:target/amazontestreport/reports.html"},

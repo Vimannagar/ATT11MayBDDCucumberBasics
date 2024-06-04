@@ -23,7 +23,17 @@ public class AppHooks {
 		 df = new DriverFactory();
 		
 		String browserName=  PropReader.readPropData("browser");
-		 
+		
+		
+		String mavenBrowserName = System.getProperty("cliBrowser");
+		
+		System.out.println("Browser name received from command prompt is : "+mavenBrowserName);
+		
+		if(mavenBrowserName != null)
+		{
+			browserName = mavenBrowserName;
+		}
+		
 		driver = df.initBrowser(browserName);
 		
 		driver.manage().window().maximize();	

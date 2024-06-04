@@ -12,12 +12,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
 	
-	WebDriver driver;
+	private	WebDriver driver;
 	
-	WebDriverWait wait;
+	private	WebDriverWait wait;
 	
 	@FindBy(xpath = "//*[@id='nav-cart']")
-	WebElement cartIcon;
+	private WebElement cartIcon;
 	
 	@FindAll(
 			{
@@ -27,10 +27,10 @@ public class HomePage {
 			}
 	
 	)
-	WebElement dealSection;
+	private	WebElement dealSection;
 	
 	@FindBy(xpath = "//*[@aria-label='Grocery & Gourmet Foods']")
-	WebElement grocerySection;
+	private WebElement grocerySection;
 	
 	public HomePage(WebDriver driver)
 	{

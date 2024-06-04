@@ -10,18 +10,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SearchProduct {
 	
-	WebDriver driver;
+	private WebDriver driver;
 	
-	WebDriverWait wait;
+	private WebDriverWait wait;
 	
 	@FindBy(xpath = "//*[@id='twotabsearchtextbox']")
-	WebElement searchfield;
+	private WebElement searchfield;
 	
 	@FindBy(xpath = "//*[@id='nav-search-submit-button']")
-	WebElement searchButton;
+	private WebElement searchButton;
 	
 	@FindBy(xpath = "//*[contains(text(),'Redmi Note 13 Pro+')]/parent::a")
-	WebElement productName;
+	private WebElement productName;
 	
 	
 	public SearchProduct(WebDriver driver)
