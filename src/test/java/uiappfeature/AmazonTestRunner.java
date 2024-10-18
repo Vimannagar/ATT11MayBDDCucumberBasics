@@ -10,7 +10,10 @@ import io.cucumber.testng.CucumberOptions;
 				
 		glue = {"uiappfeature"},
 		
-		plugin = {"pretty", "html:target/amazontestreport/reports.html"},
+		
+		plugin = {"pretty", "html:target/amazontestreport/reports.html",
+					"json:target/reports.json"
+					},
 		
 		tags = "@sanity",
 		
