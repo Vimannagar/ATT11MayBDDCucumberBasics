@@ -27,6 +27,10 @@ public class AppHooks {
 		
 		String mavenBrowserName = System.getProperty("cliBrowser");
 		
+		String envName = System.getProperty("environment");
+		
+		System.out.println(envName);
+		
 		System.out.println("Browser name received from command prompt is : "+mavenBrowserName);
 		
 		if(mavenBrowserName != null)
