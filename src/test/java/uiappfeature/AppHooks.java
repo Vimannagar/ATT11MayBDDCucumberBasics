@@ -7,20 +7,21 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import drivermanager.DriverFactory;
+import drivermanager.DriverFactory2;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import utility.PropReader;
 
 public class AppHooks {
-	DriverFactory df;
+	DriverFactory2 df;
 	
 	WebDriver driver;
 	
 	@Before
 	public void launchBrowser() throws IOException
 	{
-		 df = new DriverFactory();
+		 df = new DriverFactory2();
 		
 		String browserName=  PropReader.readPropData("browser");
 		

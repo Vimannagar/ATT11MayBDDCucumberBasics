@@ -16,7 +16,7 @@ public class HomePage {
 	
 	private	WebDriverWait wait;
 	
-	@FindBy(xpath = "//*[@id='nav-cart']")
+	@FindBy(xpath = "//*[@id='nav-cart123']")
 	private WebElement cartIcon;
 	
 	@FindAll(

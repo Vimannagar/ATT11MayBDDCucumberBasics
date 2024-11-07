@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		
 		
-		features = {"src\\test\\resources\\uiappfeature"},
+		features = {"src//test//resources//uiappfeature"},
 				
 		glue = {"uiappfeature"},
 		

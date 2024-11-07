@@ -2,14 +2,14 @@ package uiappfeature;
 
 import org.testng.Assert;
 
-import drivermanager.DriverFactory;
+import drivermanager.DriverFactory2;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.SearchProduct;
 
 public class SearchProductSteps {
 
-	SearchProduct search = new SearchProduct(DriverFactory.getDriver());
+	SearchProduct search = new SearchProduct(DriverFactory2.getDriver());
 	
 	@When("I search the name as {string} in searchfield")
 	public void i_search_the_name_as_in_searchfield(String product) {
